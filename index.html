@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugo Bastos | Portfólio Profissional</title>
+  
+  <!-- CSS oficial do Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap Icons para adicionar elementos visuais -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    /* Estilos Personalizados */
+    html {
+      scroll-behavior: smooth; /* Navegação suave ao clicar nos links do menu */
+    }
+    
+    .hero-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+
+    .hover-card {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hover-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    }
+
+    .icon-box {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #e9ecef;
+      color: #0d6efd;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- 1. Cabeçalho de navegação (Navbar) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="bi bi-code-slash text-primary me-2"></i>Hugo Bastos
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-medium">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Formação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Secção inicial de apresentação (Hero) -->
+  <header id="inicio" class="py-5 hero-section border-bottom">
+    <div class="container py-5">
+      <div class="row align-items-center justify-content-center text-center text-lg-start">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <span class="badge bg-primary text-uppercase px-3 py-2 mb-3 rounded-pill">Desenvolvedor Mobile</span>
+          <h1 class="display-4 fw-bolder mb-3">Olá, sou o <span class="text-primary">Hugo Bastos</span></h1>
+          <p class="lead fw-normal text-muted mb-4">Especialista em Desenvolvimento para Dispositivos Móveis & Programação de Sistemas, residente no Porto. Focado em criar aplicações inovadoras e otimizar processos operacionais com rigor técnico.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center">
+            <a href="#projetos" class="btn btn-primary btn-lg px-4 me-md-2 shadow-sm">
+              <i class="bi bi-rocket-takeoff me-2"></i>Ver Projetos
+            </a>
+            <a href="#contacto" class="btn btn-outline-dark btn-lg px-4 shadow-sm">
+              <i class="bi bi-envelope me-2"></i>Contactar
+            </a>
+          </div>
+        </div>
+        <!-- Espaço para Foto de Perfil -->
+        <div class="col-lg-5 text-center">
+          <img src="/images/Hugo Bastos cv.png" alt="Hugo Bastos" style="max-width: 350px;">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. Formação Académica -->
+  <section id="sobre" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold"><i class="bi bi-mortarboard text-primary me-2"></i>Formação Académica</h2>
+        <p class="text-muted">O meu percurso formativo em tecnologias da informação.</p>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-6 col-lg-5">
+          <div class="card h-100 hover-card shadow-sm border-0 border-start border-primary border-4">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-primary px-3 py-2 rounded-pill">2025 - 2027</span>
+                <i class="bi bi-phone text-muted fs-4"></i>
+              </div>
+              <h5 class="card-title fw-bold">Desenvolvimento para Dispositivos Móveis (Nível 5)</h5>
+              <p class="card-text text-muted mb-0">ISTEC - Instituto Superior de Tecnologias Avançadas do Porto</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <div class="card h-100 hover-card shadow-sm border-0 border-start border-secondary border-4">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-secondary px-3 py-2 rounded-pill">2022 - 2025</span>
+                <i class="bi bi-pc-display text-muted fs-4"></i>
+              </div>
+              <h5 class="card-title fw-bold">Técnico de Programação de Sistemas Informáticos (Nível 4)</h5>
+              <p class="card-text text-muted mb-0">Escola Profissional Bento de Jesus Caraça</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Experiência Profissional -->
+  <section id="experiencia" class="py-5 bg-white border-top border-bottom">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold"><i class="bi bi-briefcase text-primary me-2"></i>Experiência Profissional</h2>
+        <p class="text-muted">Histórico de suporte institucional e atendimento público.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="list-group shadow-sm rounded-4 border-0">
+            <!-- CMP -->
+            <div class="list-group-item p-4 border-bottom">
+              <div class="d-flex w-100 justify-content-between align-items-center mb-2">
+                <h5 class="mb-1 fw-bold text-dark">Câmara Municipal do Porto</h5>
+                <span class="badge bg-light text-dark border"><i class="bi bi-calendar-event me-1"></i> Mai 2024 - Jul 2024</span>
+              </div>
+              <h6 class="text-primary mb-3">Apoio Institucional e Funções Operacionais</h6>
+              <ul class="text-muted mb-0">
+                <li class="mb-1">Execução de processos administrativos com elevado rigor nos procedimentos.</li>
+                <li>Apoio às atividades operacionais e resposta eficaz às necessidades dos serviços municipais.</li>
+              </ul>
+            </div>
+            <!-- Phonetec -->
+            <div class="list-group-item p-4">
+              <div class="d-flex w-100 justify-content-between align-items-center mb-2">
+                <h5 class="mb-1 fw-bold text-dark">Phonetec</h5>
+                <span class="badge bg-light text-dark border"><i class="bi bi-geo-alt me-1"></i> Atendimento ao Público</span>
+              </div>
+              <h6 class="text-primary mb-3">Serviço de Apoio ao Cliente</h6>
+              <ul class="text-muted mb-0">
+                <li class="mb-1">Atendimento direto ao cliente orientado para a resolução das suas necessidades.</li>
+                <li>Aplicação de películas de proteção em secção especializada com elevado detalhe e rigor.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Projetos -->
+  <section id="projetos" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold"><i class="bi bi-braces-asterisk text-primary me-2"></i>Projetos em Destaque</h2>
+        <p class="text-muted">Aplicações e soluções focadas em dispositivos móveis e sistemas.</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100 hover-card shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="bg-primary p-5 text-center text-white">
+              <i class="bi bi-phone-fill" style="font-size: 4rem;"></i>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h5 class="card-title fw-bold">App Mobile</h5>
+              <p class="card-text text-muted flex-grow-1">Desenvolvimento de interface intuitiva e responsiva focada em navegação fluida para utilizadores em smartphones.</p>
+              <a href="#" class="btn btn-outline-primary mt-auto rounded-pill fw-medium">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100 hover-card shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="bg-dark p-5 text-center text-white">
+              <i class="bi bi-database-fill-gear" style="font-size: 4rem;"></i>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h5 class="card-title fw-bold">Sistema de Gestão</h5>
+              <p class="card-text text-muted flex-grow-1">Projeto focado na estrutura de dados, rigor operacional e organização de tarefas para otimização de serviços.</p>
+              <a href="#" class="btn btn-outline-primary mt-auto rounded-pill fw-medium">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100 hover-card shadow-sm border-0 rounded-4 overflow-hidden">
+            <div class="bg-secondary p-5 text-center text-white">
+              <i class="bi bi-headset" style="font-size: 4rem;"></i>
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <h5 class="card-title fw-bold">Plataforma de Suporte</h5>
+              <p class="card-text text-muted flex-grow-1">Solução web orientada à resposta rápida ao utilizador, com fluxos organizados para acompanhamento de pedidos.</p>
+              <a href="#" class="btn btn-outline-primary mt-auto rounded-pill fw-medium">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Contacto -->
+  <section id="contacto" class="py-5 bg-white border-top">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <!-- Info de Contacto -->
+        <div class="col-lg-5 mb-5 mb-lg-0 pe-lg-5">
+          <h2 class="fw-bold mb-4">Vamos Trabalhar Juntos?</h2>
+          <p class="text-muted mb-5">Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua visão.</p>
+          
+          <div class="d-flex align-items-center mb-4">
+            <div class="icon-box"><i class="bi bi-geo-alt-fill fs-5"></i></div>
+            <div>
+              <h6 class="fw-bold mb-0">Localização</h6>
+              <span class="text-muted">Porto, Portugal</span>
+            </div>
+          </div>
+          
+          <div class="d-flex align-items-center mb-4">
+            <div class="icon-box"><i class="bi bi-telephone-fill fs-5"></i></div>
+            <div>
+              <h6 class="fw-bold mb-0">Telefone</h6>
+              <span class="text-muted">+351 933 034 995</span>
+            </div>
+          </div>
+          
+          <div class="d-flex align-items-center">
+            <div class="icon-box"><i class="bi bi-envelope-fill fs-5"></i></div>
+            <div>
+              <h6 class="fw-bold mb-0">E-mail</h6>
+              <a href="mailto:hugobastos2005@outlook.pt" class="text-decoration-none text-muted">hugobastos2005@outlook.pt</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-light">
+            <form action="mailto:hugobastos2005@outlook.pt" method="post" enctype="text/plain">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="nome" class="form-label fw-medium">Nome Completo</label>
+                  <input type="text" class="form-control form-control-lg border-0 shadow-sm" id="nome" name="Nome" placeholder="O teu nome" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label fw-medium">Endereço de E-mail</label>
+                  <input type="email" class="form-control form-control-lg border-0 shadow-sm" id="email" name="Email" placeholder="nome@exemplo.com" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="assunto" class="form-label fw-medium">Assunto</label>
+                <input type="text" class="form-control form-control-lg border-0 shadow-sm" id="assunto" name="Assunto" placeholder="Assunto da mensagem" required>
+              </div>
+              <div class="mb-4">
+                <label for="mensagem" class="form-label fw-medium">Mensagem</label>
+                <textarea class="form-control form-control-lg border-0 shadow-sm" id="mensagem" name="Mensagem" rows="5" placeholder="Escreve aqui a tua mensagem..." required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg rounded-pill fw-bold shadow-sm">
+                  <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Rodapé -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <div class="mb-3">
+        <!-- Redes Sociais (Links de Exemplo) -->
+        <a href="#" class="text-white text-decoration-none me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-white text-decoration-none me-3 fs-5"><i class="bi bi-github"></i></a>
+      </div>
+      <p class="mb-1 fw-light">&copy; 2026 Hugo Bastos. Todos os direitos reservados.</p>
+      <p class="text-muted small mb-0">Desenvolvido com Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript oficial do Bootstrap 5.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
